@@ -1,0 +1,9 @@
+<div class="formSearch">
+    <h1>Catalogue d'Avengers</h1>
+    
+    <form ng-submit="recherche()" ng-controller="accueilCtrl">
+        <label for="recherche">Entrez le nom de l'Avenger recherché (ou sélectionnez en un dans la liste):</label><br>
+        <input type="text" id="recherche" ng-model="nom" name="nom">
+        <input type="submit" id="submit" value="Aller!">
+    </form>
+</div>

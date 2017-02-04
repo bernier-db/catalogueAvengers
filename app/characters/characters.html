@@ -1,0 +1,38 @@
+<button><a href="#/accueil">Accueil</a></button>
+<div ng-controller="charactersFetchCtrl">
+
+    <div>
+        <div ng-show="ok" class="info">
+
+            <div class="flex">
+                <div class="photo">
+                    <img ng-src="{{img}}">
+                </div>
+
+                <div class="desc">
+                    <h1>{{nom}}</h1>
+                    <h3>Description</h3>
+                    <p>{{description}}</p>
+                </div>
+            </div>
+            <div class="liens">
+                <h3>Liens externes:</h3>
+                <ul>
+                    <li ng-repeat="url in urls"><a href="{{url.url}}">{{url.type}}</a></li>
+                </ul>
+            </div>
+
+            <small style="text-alignt:center !important;">{{attribution}}</small>
+
+        </div>
+
+        <div ng-show="!ok">
+            <div class="err">
+
+                La recherche effectuée de se trouve pas dans l'API de Marvel.<br> Réessayez
+            </div>
+
+        </div>
+
+    </div>
+</div>

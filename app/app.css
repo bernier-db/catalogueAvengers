@@ -1,0 +1,89 @@
+body {
+    background: url("./img/avengers.jpg") fixed center;
+    background-color: black;
+    font-size: 15pt;
+}
+#sidebar ul {
+    -moz-column-count: 5;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 20px;
+    column-count: 5;
+    column-gap: 20px;
+}
+.formSearch {
+    width: 500px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ccc;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.info {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ccc;
+    padding-left: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+#sidebar {
+    
+    width: auto;
+    height: auto;
+    background-color: rgba(100, 100, 100, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+.liens {
+    text-align: left;
+    width: auto;
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+    color: lightgray;
+}
+a:hover {
+    font-size: 102%;
+    color:darkslategrey;
+}
+.photo {
+    padding-top:20px;
+}
+
+.desc {
+    padding-left: 20px;
+    height: 180px;
+}
+
+#copyright {
+    text-align: center !important;
+}
+
+.err {
+    padding-left: 100px;
+    text-align: center;
+    margin-top: 150px;
+    height: 200px;
+}
+
